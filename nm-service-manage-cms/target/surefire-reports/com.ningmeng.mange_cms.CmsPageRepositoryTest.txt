@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: com.ningmeng.mange_cms.CmsPageRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.597 s <<< FAILURE! - in com.ningmeng.mange_cms.CmsPageRepositoryTest
+initializationError(com.ningmeng.mange_cms.CmsPageRepositoryTest)  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
+
