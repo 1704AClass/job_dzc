@@ -1,0 +1,3 @@
+com\ningmeng\manage_course\dao\TeachplanMapper.class
+com\ningmeng\manage_course\controller\CourseController.class
+com\ningmeng\manage_course\service\CourseService.class

@@ -12,6 +12,7 @@ import org.springframework.context.annotation.ComponentScan;
 @EntityScan("com.ningmeng.framework.domain.cms")//扫描实体类
 @ComponentScan(basePackages={"com.ningmeng.api"})//扫描接口
 @ComponentScan(basePackages={"com.ningmeng.manage_cms"})//扫描本项目下的所有类
+@ComponentScan(basePackages={"com.ningmeng.framework"})//扫描common工程下的类
 public class ManageCmsApplication {
     public static void main(String[] args) {
         SpringApplication.run(ManageCmsApplication.class,args);

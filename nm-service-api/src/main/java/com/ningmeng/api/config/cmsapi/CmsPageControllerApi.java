@@ -2,6 +2,7 @@ package com.ningmeng.api.config.cmsapi;
 
 import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.model.response.QueryResponseResult;
+import com.ningmeng.framework.model.response.ResponseResult;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
@@ -18,4 +19,7 @@ public interface CmsPageControllerApi {
             @ApiImplicitParam(name="size",value = "每页记录数",required=true,paramType="path",dataType="int")
     })
     public QueryResponseResult findList(int page, int size, QueryPageRequest queryPageRequest);
+
+    @ApiOperation("发布页面")
+    public ResponseResult post(String pageId);
 }
