@@ -4,6 +4,7 @@ import com.ningmeng.api.config.cmsapi.CmsPageControllerApi;
 import com.ningmeng.framework.domain.cms.CmsPage;
 import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsPageResult;
+import com.ningmeng.framework.domain.cms.response.CmsPostPageResult;
 import com.ningmeng.framework.model.response.QueryResponseResult;
 import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.manage_cms.service.CmsPageService;
@@ -14,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
  * Created by ASUS on 2020/2/14.
  */
 @RestController
+@RequestMapping("/cms")
 public class CmsPageController implements CmsPageControllerApi{
     @Autowired
     private CmsPageService cmsPageService;
@@ -50,5 +52,15 @@ public class CmsPageController implements CmsPageControllerApi{
     @PostMapping("/postPage/{pageId}")
     public ResponseResult post(@PathVariable("pageId") String pageId) {
         return cmsPageService.postPage(pageId);
+    }
+
+    @PostMapping("/save")
+    public CmsPageResult save(@RequestBody CmsPage cmsPage) {
+        return cmsPageService.save(cmsPage);
+    }
+
+    @PostMapping("/postPageQuick")
+    public CmsPostPageResult postPageQuick(@RequestBody CmsPage cmsPage){
+        return cmsPageService.postPageQuick(cmsPage);
     }
 }
