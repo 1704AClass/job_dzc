@@ -43,6 +43,8 @@ E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\n
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\cms\request\QueryPageRequest.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\order\XcOrdersPay.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\cms\response\CoursePreviewResult.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\cms\response\CmsPostPageResult.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\course\response\CoursePublishResult.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\filesystem\response\UploadFileResult.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\ucenter\request\LoginRequest.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\order\XcOrders.java
@@ -58,6 +60,7 @@ E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\n
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\report\ReportCompany.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\cms\CmsConfig.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\course\CoursePre.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\course\response\CourseView.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\ucenter\ext\UserToken.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\cms\ext\CmsTemplateExt.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-framework-model\src\main\java\com\ningmeng\framework\domain\media\MediaVideoCourse.java

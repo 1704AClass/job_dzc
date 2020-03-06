@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.ningmeng.manage_course.dao.FeignTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 28.695 s <<< FAILURE! - in com.ningmeng.manage_course.dao.FeignTest
+testfeign(com.ningmeng.manage_course.dao.FeignTest)  Time elapsed: 6.907 s  <<< ERROR!
+java.lang.RuntimeException: com.netflix.client.ClientException: Load balancer does not have available server for client: nm-service-manage-cms
+	at com.ningmeng.manage_course.dao.FeignTest.testfeign(FeignTest.java:23)
+Caused by: com.netflix.client.ClientException: Load balancer does not have available server for client: nm-service-manage-cms
+	at com.ningmeng.manage_course.dao.FeignTest.testfeign(FeignTest.java:23)
+

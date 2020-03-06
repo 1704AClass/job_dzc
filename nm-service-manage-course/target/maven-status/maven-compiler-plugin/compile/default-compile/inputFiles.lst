@@ -1,6 +1,14 @@
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\ManageCourseApplication.java
-E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\controller\CourseController.java
-E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\TeachplanMapper.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CategoryMapper.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CourseMarketRepository.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CoursePubRepository.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\service\CategoryService.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\service\CourseService.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CourseMapper.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\controller\CourseController.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CoursePicRepository.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\client\CmsPageClient.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\TeachplanRepository.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\controller\CategoryController.java
+E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\TeachplanMapper.java
 E:\nginx-1.14\hdservicecode\hdservicecode\nm-service-manage-course\src\main\java\com\ningmeng\manage_course\dao\CourseBaseRepository.java

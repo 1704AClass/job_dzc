@@ -1,9 +1,6 @@
 package com.ningmeng.api.config.course;
 
-import com.ningmeng.framework.domain.course.CourseBase;
-import com.ningmeng.framework.domain.course.CourseMarket;
-import com.ningmeng.framework.domain.course.CoursePic;
-import com.ningmeng.framework.domain.course.Teachplan;
+import com.ningmeng.framework.domain.course.*;
 import com.ningmeng.framework.domain.course.response.CoursePublishResult;
 import com.ningmeng.framework.domain.course.response.CourseView;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
@@ -66,4 +63,7 @@ public interface CourseControllerApi {
 
     @ApiOperation("发布课程")
     public CoursePublishResult publish(@PathVariable String id);
+
+    @ApiOperation("保存媒资信息")
+    public ResponseResult savemedia(TeachplanMedia teachplanMedia);
 }
