@@ -1,6 +1,6 @@
 package com.ningmeng.manage_cms.controller;
 
-import com.ningmeng.api.config.cmsapi.SysDicthinaryControllerApi;
+import com.ningmeng.api.cmsapi.SysDicthinaryControllerApi;
 import com.ningmeng.framework.domain.system.SysDictionary;
 import com.ningmeng.manage_cms.service.SysdictionaryService;
 import org.springframework.beans.factory.annotation.Autowired;

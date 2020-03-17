@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import java.nio.file.AccessDeniedException;
+
 /**
  *  异常捕获类
  *  Created by ASUS on 2020/2/18.
@@ -53,6 +55,7 @@ public class ExceptionCatch {
     static{
         //在这里加入一些基础的异常类型判断
         builder.put(HttpMessageNotReadableException.class, CommonCode.INVALID_PARAM);
+        builder.put(AccessDeniedException.class, CommonCode.UNAUTHORISE);
     }
 
 }

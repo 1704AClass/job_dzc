@@ -1,6 +1,6 @@
 package com.ningmeng.manage_media.controller;
 
-import com.ningmeng.api.config.mediaapi.MediaUploadControllerApi;
+import com.ningmeng.api.mediaapi.MediaUploadControllerApi;
 import com.ningmeng.framework.domain.media.response.CheckChunkResult;
 import com.ningmeng.framework.model.response.ResponseResult;
 import com.ningmeng.manage_media.service.MediaUploadService;

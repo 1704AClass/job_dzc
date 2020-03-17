@@ -1,17 +1,21 @@
 package com.ningmeng.manage_course.controller;
 
-import com.ningmeng.api.config.course.CourseControllerApi;
+import com.ningmeng.api.course.CourseControllerApi;
 import com.ningmeng.framework.domain.course.*;
 import com.ningmeng.framework.domain.course.ext.TeachplanNode;
 import com.ningmeng.framework.domain.course.request.CourseListRequest;
 import com.ningmeng.framework.domain.course.response.AddCourseResult;
 import com.ningmeng.framework.domain.course.response.CoursePublishResult;
 import com.ningmeng.framework.domain.course.response.CourseView;
+import com.ningmeng.framework.exception.ExceptionCast;
 import com.ningmeng.framework.model.response.CommonCode;
 import com.ningmeng.framework.model.response.QueryResponseResult;
 import com.ningmeng.framework.model.response.ResponseResult;
+import com.ningmeng.framework.utils.NmOauth2Util;
+import com.ningmeng.framework.web.BaseController;
 import com.ningmeng.manage_course.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 /**
@@ -19,7 +23,7 @@ import org.springframework.web.bind.annotation.*;
  */
 @RestController
 @RequestMapping("/course")
-public class CourseController implements CourseControllerApi {
+public class CourseController extends BaseController implements CourseControllerApi {
     @Autowired
     CourseService courseService;
     //查询课程计划
@@ -35,12 +39,20 @@ public class CourseController implements CourseControllerApi {
         return courseService.addTeachplan(teachplan);
     }
 
+    @PreAuthorize("hasAuthority('course_find_list')")
     @GetMapping("/coursebase/list/{page}/{size}")
     public QueryResponseResult findCourseList(
             @PathVariable("page") int page,
             @PathVariable("size") int size,
             CourseListRequest courseListRequest) {
-        return courseService.findCourseList(page,size,courseListRequest);
+        //调用工具类取出用户信息
+        NmOauth2Util nmOauth2Util = new NmOauth2Util();
+        NmOauth2Util.UserJwt userJwt = nmOauth2Util.getUserJwtFromHeader(request);
+        if (userJwt == null){
+            ExceptionCast.cast(CommonCode.UNAUTHENTICATED);
+        }
+        String companyId = userJwt.getCompanyId();
+        return courseService.findCourseList(companyId,page,size,courseListRequest);
     }
 
     @PostMapping("/coursebase/add")
@@ -48,6 +60,7 @@ public class CourseController implements CourseControllerApi {
         return courseService.addCourseResult(courseBase);
     }
 
+    @PreAuthorize("hasAuthority('course_get_baseinfo')")
     @GetMapping("/coursebase/get/{courseId}")
     public CourseBase getCourseBaseById(@PathVariable("courseId") String courseId) throws
             RuntimeException {

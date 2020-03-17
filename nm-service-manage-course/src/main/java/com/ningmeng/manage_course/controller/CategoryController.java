@@ -1,6 +1,6 @@
 package com.ningmeng.manage_course.controller;
 
-import com.ningmeng.api.config.course.CategoryControllerApi;
+import com.ningmeng.api.course.CategoryControllerApi;
 import com.ningmeng.framework.domain.course.ext.CategoryNode;
 import com.ningmeng.manage_course.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;

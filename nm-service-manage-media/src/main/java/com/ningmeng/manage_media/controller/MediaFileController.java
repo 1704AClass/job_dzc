@@ -1,6 +1,6 @@
 package com.ningmeng.manage_media.controller;
 
-import com.ningmeng.api.config.mediaapi.MediaFileControllerApi;
+import com.ningmeng.api.mediaapi.MediaFileControllerApi;
 import com.ningmeng.framework.domain.media.request.QueryMediaFileRequest;
 import com.ningmeng.framework.model.response.QueryResponseResult;
 import com.ningmeng.manage_media.service.MediaFileService;

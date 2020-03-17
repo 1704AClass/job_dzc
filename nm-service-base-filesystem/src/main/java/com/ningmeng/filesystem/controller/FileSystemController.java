@@ -1,6 +1,6 @@
 package com.ningmeng.filesystem.controller;
 
-import com.ningmeng.api.config.filesystem.FileSystemControllerApi;
+import com.ningmeng.api.filesystem.FileSystemControllerApi;
 import com.ningmeng.filesystem.service.FileSystemService;
 import com.ningmeng.framework.domain.filesystem.response.UploadFileResult;
 import org.springframework.beans.factory.annotation.Autowired;

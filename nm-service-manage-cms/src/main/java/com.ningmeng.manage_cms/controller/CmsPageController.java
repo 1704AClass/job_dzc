@@ -1,6 +1,6 @@
 package com.ningmeng.manage_cms.controller;
 
-import com.ningmeng.api.config.cmsapi.CmsPageControllerApi;
+import com.ningmeng.api.cmsapi.CmsPageControllerApi;
 import com.ningmeng.framework.domain.cms.CmsPage;
 import com.ningmeng.framework.domain.cms.request.QueryPageRequest;
 import com.ningmeng.framework.domain.cms.response.CmsPageResult;
